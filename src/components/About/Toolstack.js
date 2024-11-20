@@ -5,7 +5,6 @@ import {
   SiPostman,
   SiSlack,
   SiVercel,
-  SiMacos,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";  // Corrected AWS icon import
 
