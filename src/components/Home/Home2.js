@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/Naman.jpg"; // Update with your avatar image path
+import myImg from "../../Assets/Naman.png"; // Update with your avatar image path
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -50,7 +50,16 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="avatar"
+                style={{
+                  maxWidth: "250px", // You can change this value to your desired width
+                  width: "100%", // This ensures the image will scale responsively
+                  height: "auto", // This maintains the aspect ratio
+                }}
+              />
             </Tilt>
           </Col>
         </Row>
