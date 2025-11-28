@@ -1,0 +1,28 @@
+.cursor {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #c770f0;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease;
+  transition-property: width, height, border;
+  will-change: width, height, transform, border;
+}
+
+.cursor--hidden {
+  opacity: 0;
+}
+
+.cursor--clicked {
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: #c770f0;
+}
+
+.cursor--link-hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: rgba(199, 112, 240, 0.1);
+  border-color: transparent;
+}
