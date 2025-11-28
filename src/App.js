@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Achievements from "./components/Achievements/Achievements";
+import Particle from "./components/Particle";
 import {
   BrowserRouter as Router,
   Route,
@@ -20,8 +21,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -42,6 +41,7 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Particle />
         <Navbar />
         <ScrollToTop />
         <Routes>
