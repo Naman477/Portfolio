@@ -45,7 +45,6 @@ function Projects() {
               ghLink="https://github.com/Naman477/OncoGraph-RAG"
             />
           </Col>
-
           {/* LAVA Voice Assistant */}
           <Col md={4} className="project-card">
             <ProjectCard
