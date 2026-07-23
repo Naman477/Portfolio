@@ -16,11 +16,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #0f172a 50%, #0a0d14 100%) fixed;
   color: var(--text-color);
   font-family: "Raleway", sans-serif !important;
   overflow-x: hidden;
-  /* Hide default cursor for custom one */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
