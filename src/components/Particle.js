@@ -1,8 +1,9 @@
 import React from "react";
 
 function Particle() {
-  return null;
+  return <div style={{ display: "none" }} />;
 }
 
 export default Particle;
+
 
