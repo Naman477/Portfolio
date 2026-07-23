@@ -88,10 +88,13 @@ function InteractiveTerminal() {
       maxWidth: "850px",
       borderRadius: "12px",
       overflow: "hidden",
-      border: "1px solid rgba(0, 243, 255, 0.3)",
+      border: "1px solid rgba(0, 243, 255, 0.4)",
       backgroundColor: "rgba(10, 15, 30, 0.95)",
-      boxShadow: "0 12px 40px rgba(0, 243, 255, 0.15)",
-      fontFamily: "'Fira Code', 'Courier New', monospace"
+      boxShadow: "0 12px 40px rgba(0, 243, 255, 0.2)",
+      fontFamily: "'Fira Code', 'Courier New', monospace",
+      position: "relative",
+      zIndex: 10,
+      pointerEvents: "auto"
     }}>
       {/* Terminal Top Bar */}
       <div style={{
