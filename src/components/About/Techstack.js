@@ -9,6 +9,8 @@ function Techstack() {
     { icon: <DiJava />, name: "Java (OOP, DSA)" },
     { icon: <FaPython />, name: "Python (AI/ML)" },
     { icon: <DiJavascript1 />, name: "JavaScript (ES6+)" },
+    { icon: <FaHtml5 />, name: "HTML5" },
+    { icon: <FaCss3Alt />, name: "CSS3" },
     { icon: <SiPhp />, name: "PHP" },
     { icon: <FaReact />, name: "React.js" },
     { icon: <FaNodeJs />, name: "Node.js" },
