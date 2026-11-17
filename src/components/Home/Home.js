@@ -8,7 +8,7 @@ import { FaBrain, FaCertificate, FaCode, FaAward } from "react-icons/fa";
 
 function Home() {
   const stats = [
-    { icon: <FaBrain style={{ color: "#00f3ff" }} />, value: "1 Patent", label: "Published (PneumoFed-ViT)" },
+    { icon: <FaBrain style={{ color: "#00f3ff" }} />, value: "2 AI Patents", label: "Published & Certified" },
     { icon: <FaCode style={{ color: "#c770f0" }} />, value: "500+", label: "DSA Problems Solved" },
     { icon: <FaCertificate style={{ color: "#10b981" }} />, value: "AWS", label: "Certified Cloud Practitioner" },
     { icon: <FaAward style={{ color: "#f59e0b" }} />, value: "Winner", label: "TechExpo 2024 & AI Hackathon" },

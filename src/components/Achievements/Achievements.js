@@ -20,16 +20,22 @@ function Achievements() {
 
     const honors = [
         {
+            icon: <FaLightbulb style={{ color: "#c770f0" }} />,
+            title: "Published Patent Co-Inventor",
+            issuer: "Indian Patent Office · App. No. 202511082508 A",
+            desc: "Co-invented PneumoFed-ViT: Stacked CNN-Vision Transformer architecture using Federated Averaging across 5 client nodes achieving 91% accuracy."
+        },
+        {
+            icon: <FaAward style={{ color: "#10b981" }} />,
+            title: "Patent Certified Co-Inventor",
+            issuer: "Indian Patent Office · App. No. 202511094312 A",
+            desc: "Co-invented Robust Basil Leaf Disease Detection via Multi-Architecture Stacking: Ensemble framework (EfficientNet, DenseNet, ResNet) with 99.78% accuracy."
+        },
+        {
             icon: <FaCloud style={{ color: "#ff9900" }} />,
             title: "AWS Certified Cloud Practitioner",
             issuer: "Amazon Web Services (CLF-C02)",
             desc: "Demonstrated overall understanding of AWS Cloud platform, core services, security, architecture, and deployment models."
-        },
-        {
-            icon: <FaLightbulb style={{ color: "#c770f0" }} />,
-            title: "Published Patent Co-Inventor",
-            issuer: "Patent App. No. 202511082508 A",
-            desc: "Co-invented PneumoFed-ViT: Stacked CNN-ViT architecture using Federated Averaging across 5 client nodes achieving 91% accuracy."
         },
         {
             icon: <FaTrophy style={{ color: "#00f3ff" }} />,
@@ -60,14 +66,21 @@ function Achievements() {
             title: "Head, Ignitia Tech Fest (2 Years)",
             issuer: "PSIT Kanpur",
             desc: "Led a 50+ student organizing committee for college-wide technical events, hackathons, and symposiums."
-        },
-        {
-            icon: <FaTrophy style={{ color: "#ef4444" }} />,
-            title: "ACM ICPC Participant & Zonal Badminton Player",
-            issuer: "ACM ICPC / Inter-College Athletics",
-            desc: "Participated in prestigious ACM ICPC competitive programming contest; represented college at Zonal Badminton Level."
         }
     ];
+
+    const formatCertTitle = (filename) => {
+        if (filename.includes("Robust Basil Leaf Disease Detection")) {
+            return "Patent Certificate: Robust Basil Leaf Disease Detection via Multi-Architecture Stacking";
+        }
+        if (filename.toLowerCase().includes("patent")) {
+            return "Patent Publication: PneumoFed-ViT (App. No. 202511082508 A)";
+        }
+        if (filename.includes("Hack with India")) {
+            return "Hack with India Award Certificate";
+        }
+        return filename.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ");
+    };
 
     // Dynamically import all certificates (pdf, png, jpg, jpeg) if present
     let certificates = [];
@@ -75,12 +88,20 @@ function Achievements() {
         const req = require.context("../../Assets/Certificates", false, /\.(pdf|png|jpe?g)$/);
         certificates = req.keys().map((key) => {
             const path = req(key);
-            const name = key.replace(/^.*[\\/]/, '');
+            const rawName = key.replace(/^.*[\\/]/, '');
             return {
                 path,
-                name,
-                isPdf: name.toLowerCase().endsWith('.pdf')
+                name: formatCertTitle(rawName),
+                rawName,
+                isPdf: rawName.toLowerCase().endsWith('.pdf')
             };
+        });
+
+        // Sort so patent certificates appear first
+        certificates.sort((a, b) => {
+            const aPatent = a.name.toLowerCase().includes("patent") ? 1 : 0;
+            const bPatent = b.name.toLowerCase().includes("patent") ? 1 : 0;
+            return bPatent - aPatent;
         });
     } catch (e) {
         certificates = [];

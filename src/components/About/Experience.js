@@ -32,7 +32,7 @@ function Experience() {
                     </ul>
                 </VerticalTimelineElement>
 
-                {/* Published Patent */}
+                {/* Published Patent 1 */}
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: "rgba(15, 23, 42, 0.85)", color: "#fff", border: "1px solid rgba(199, 112, 240, 0.4)", boxShadow: "0 10px 25px rgba(199, 112, 240, 0.15)" }}
@@ -42,9 +42,25 @@ function Experience() {
                     icon={<FaLightbulb />}
                 >
                     <h3 className="vertical-timeline-element-title" style={{ color: "#c770f0" }}>Published Patent Co-Inventor</h3>
-                    <h4 className="vertical-timeline-element-subtitle" style={{ color: "#94a3b8" }}>App No. 202511082508 A</h4>
+                    <h4 className="vertical-timeline-element-subtitle" style={{ color: "#94a3b8" }}>Indian Patent Office · App No. 202511082508 A</h4>
                     <p style={{ fontSize: "0.9rem", color: "#cbd5e1" }}>
                         Co-invented <b>PneumoFed-ViT</b>: A stacked CNN-Vision Transformer trained using Federated Averaging across 5 client nodes for privacy-preserving healthcare AI, achieving <b>91% diagnostic accuracy</b>.
+                    </p>
+                </VerticalTimelineElement>
+
+                {/* Patent Certified 2 */}
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: "rgba(15, 23, 42, 0.85)", color: "#fff", border: "1px solid rgba(16, 185, 129, 0.4)", boxShadow: "0 10px 25px rgba(16, 185, 129, 0.15)" }}
+                    contentArrowStyle={{ borderRight: "7px solid  rgba(15, 23, 42, 0.85)" }}
+                    date="2025"
+                    iconStyle={{ background: "#10b981", color: "#fff" }}
+                    icon={<FaLightbulb />}
+                >
+                    <h3 className="vertical-timeline-element-title" style={{ color: "#10b981" }}>Patent Certified Co-Inventor</h3>
+                    <h4 className="vertical-timeline-element-subtitle" style={{ color: "#94a3b8" }}>Indian Patent Office · App No. 202511094312 A</h4>
+                    <p style={{ fontSize: "0.9rem", color: "#cbd5e1" }}>
+                        Co-invented <b>Robust Basil Leaf Disease Detection via Multi-Architecture Stacking</b>: Heterogeneous ensemble (EfficientNet, DenseNet, ResNet) with Logistic Regression meta-learner and Grad-CAM, maintaining <b>99.78% accuracy</b> under noise.
                     </p>
                 </VerticalTimelineElement>
 

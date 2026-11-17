@@ -15,7 +15,7 @@ function AboutCard() {
             <br />
             I am currently working as a <span className="purple">Software Developer Intern</span> at Graptix Technologies Pvt. Ltd. (Noida), building production-grade web features and RESTful services.
             <br />
-            I am a co-inventor of a published patent (<span className="purple">App. No. 202511082508 A</span>) for privacy-preserving AI in healthcare using Federated Learning.
+            I am a published co-inventor of two AI patents: <span className="purple">PneumoFed-ViT</span> (App. No. 202511082508 A) covering privacy-preserving healthcare diagnostics using Federated Learning, and <span className="purple">Robust Basil Leaf Disease Detection</span> (App. No. 202511094312 A) utilizing multi-architecture stacking for automated plant pathology.
             <br />
             <br />
             Apart from engineering, here are some activities I am passionate about!

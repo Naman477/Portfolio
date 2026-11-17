@@ -8,8 +8,9 @@ function Type() {
         strings: [
           "Full Stack Web Developer",
           "AI & Machine Learning Engineer",
-          "Patent Holder (PneumoFed-ViT)",
+          "Published Co-Inventor of 2 AI Patents",
           "AWS Certified Cloud Practitioner",
+          "Computer Vision & Multi-Modal RAG",
           "500+ DSA Problems Solved",
           "Software Developer Intern @ Graptix",
         ],

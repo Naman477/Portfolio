@@ -34,7 +34,7 @@ function Home2() {
               </b>
               <br />
               <br />
-              I am a proud <b className="purple">Published Patent Holder (App. No. 202511082508 A)</b> for co-inventing <b className="purple">PneumoFed-ViT</b>, a privacy-preserving federated healthcare model with 91% accuracy.
+              I am a proud <b className="purple">Published Co-Inventor of Two AI Patents</b>: <b className="purple">PneumoFed-ViT</b> (App. No. 202511082508 A) for privacy-preserving federated healthcare diagnostics, and <b className="purple">Robust Basil Leaf Disease Detection via Multi-Architecture Stacking</b> (App. No. 202511094312 A) achieving 99.78% diagnostic accuracy under real-world noise.
               <br />
               <br />
               I am also an <b className="purple">AWS Certified Cloud Practitioner</b> and have solved over <b className="purple">500+ DSA Problems</b> across LeetCode, GeeksforGeeks, and HackerRank.

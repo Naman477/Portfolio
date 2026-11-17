@@ -13,27 +13,32 @@ const COMMANDS = {
   
   bio: `Naman Chugh | B.Tech Information Technology (PSIT Kanpur, CGPA 7.72)
 Software Developer Intern @ Graptix Technologies Pvt. Ltd.
-Focus: Scalable Full Stack Web Apps, Generative AI, Federated Learning & Cloud Engineering.
-Achievement Highlights: Published Patent, AWS Cloud Practitioner Certified, 500+ DSA Problems Solved.`,
+Focus: Applied AI/ML, Computer Vision, Multi-Modal RAG & Scalable Web Architectures.
+Highlights: Published Co-Inventor of 2 AI Patents, AWS Cloud Practitioner Certified, 500+ DSA Problems Solved.`,
 
   skills: `TECHNICAL STACK & COMPETENCIES:
-  • Languages: Java (OOP, DSA), Python (AI/ML), JavaScript (ES6+), PHP, SQL, C
-  • Web/Frontend: React.js, Node.js, HTML5/CSS3, Tailwind CSS, Bootstrap, REST APIs
-  • AI & Machine Learning: TensorFlow, PyTorch, Federated Learning (PneumoFed-ViT), LLMs, QLoRA, Wav2Lip, GANs, OpenCV
-  • Cloud & DevOps: AWS (Certified Cloud Practitioner), Docker, Netlify, Git/GitHub, Linux, MySQL, Firebase`,
+  • Languages: Python (AI/ML), Java (OOP, DSA), C++, JavaScript (ES6+), PHP, SQL, C
+  • AI & Machine Learning: PyTorch, TensorFlow, Computer Vision (OpenCV, Canny), Multi-Modal RAG (LangChain), Generative AI (Amazon Bedrock), Federated Learning (FedAvg), Deep Learning (CNNs, Vision Transformers)
+  • Web/Frontend: React.js, Node.js, HTML5/CSS3, Tailwind CSS, Bootstrap, REST APIs, Flask, FastAPI
+  • Cloud & DevOps: AWS (Certified Cloud Practitioner, Bedrock, Rekognition), Docker, Git/GitHub, Linux, MySQL`,
 
-  patent: `PATENT PUBLICATION DETAILS:
-  • Title: Pneumonia Detection using Federated Learning
-  • Patent App. No.: 202511082508 A
-  • Architecture: PneumoFed-ViT (Stacked CNN-Vision Transformer)
-  • Highlights: Achieved 91% accuracy across 5 simulated clients using Federated Averaging (FedAvg), preserving medical data privacy without centralizing patient records.`,
+  patent: `PATENT INTELLECTUAL PROPERTY (2 PATENTS):
+  1. Pneumonia Detection using Federated Learning (PneumoFed-ViT)
+     • Patent App. No.: 202511082508 A (Status: Published 2025)
+     • Architecture: Stacked CNN-Vision Transformer trained across 5 nodes via FedAvg (91% Accuracy).
+  2. Robust Basil Leaf Disease Detection via Multi-Architecture Stacking
+     • Patent App. No.: 202511094312 A (Status: Patent Certified 2025)
+     • Architecture: Stacking Ensemble (EfficientNetV2B0, DenseNet121, ResNet50V2 + Logistic Regression Meta-Learner), maintaining 99.78% accuracy under real-world noise (AWGN) with 15ms latency & Grad-CAM XAI.`,
 
   projects: `FEATURED PROJECTS:
   1. PneumoFed-ViT: Patent-published Federated Learning model for privacy-preserving Pneumonia detection (91% Accuracy).
-  2. SynchroFace: GenAI voice-to-video pipeline generating photorealistic lip-synced avatars (Wav2Lip, OpenCV, GANs).
-  3. Prabuddh-Ganit: Fine-tuned Hindi LLM (QLoRA) with FastAPI 4-bit quantized REST inference engine.
-  4. OncoGraph-RAG: Medical Knowledge Graph RAG framework for Breast Cancer treatment guidelines (NCCN/ESMO).
-  5. Farmisian: Full-stack AI-driven crop recommendation & weather portal (PHP, MySQL).`,
+  2. Robust Basil Leaf Disease Detection: Patent-certified botanical foliar pathology stacking ensemble (99.78% Accuracy).
+  3. GramNiti: Offline-capable AI for rural cooperatives with Amazon Bedrock dialect voice-to-order & Rekognition crop grading.
+  4. Real-Time Edge Detection: High-throughput edge CV system with C++ CameraX optimization & OpenCV.js web demo (30+ FPS).
+  5. Multi-Modal Document RAG: End-to-end RAG parsing & querying text, tables, and visual charts with dense embeddings.
+  6. Stenography Error Detector: Automated NLP & OCR pipeline calculating transcription accuracy with visual diff audit.
+  7. SynchroFace: GenAI voice-to-video pipeline generating photorealistic lip-synced avatars (Wav2Lip, OpenCV, GANs).
+  8. OncoGraph-RAG: Medical Knowledge Graph RAG framework for Breast Cancer treatment guidelines (NCCN/ESMO).`,
 
   experience: `PROFESSIONAL EXPERIENCE:
   • Software Developer Intern @ Graptix Technologies Pvt. Ltd. (Jun 2026 - Present)
